@@ -1,0 +1,633 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 88.26%;
+	padding-left: 31px;
+	padding-right: 33px;
+}
+
+
+/*导航栏*/
+
+.container nav {
+	height: 50px;
+	line-height: 50px;
+	background-color: white;
+	border: none;
+}
+
+
+/*响应式导航栏*/
+
+.resNav {
+	display: none;
+	margin-left: 10px;
+}
+.container .resNav ul {
+	position: absolute;
+	top: 42px;
+	left: 0;
+	padding: 0;
+	width: 300px;
+	border-bottom: 2px solid black;
+	border-radius: 0px;
+}
+
+.container .resNav ul li {
+	width: 100%;
+	margin: 0;
+	padding: 15px;
+	display: inline-block;
+}
+
+.container .resNav ul li a{
+	line-height: 36px;
+}
+.resNav .moreList {
+	display: none;
+	width: 300px;
+	height: 500px;
+	position: absolute !important;
+    left: 300px !important;
+    top: 0 !important;
+    background: rgb(245, 245, 245);
+}
+.resNav .more:hover>.moreList {
+	display: block;
+}
+
+/*导航栏左*/
+
+.container .navbar-nav {
+	height: 50px;
+	padding-top: 2px;
+}
+
+
+/*logo*/
+
+.container .navbar-header a {
+	padding: 12px 13px 20px 14px;
+	margin-left: 12px;
+	box-sizing: border-box;
+}
+
+.container .navbar-header img {
+	width: 108px;
+	margin-top: -5px;
+}
+
+
+/*导航栏选项*/
+
+.container .navbar-nav a {
+	padding: 14px 27px 10px 27px;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+}
+
+.container .navbar-nav p {
+	color: black;
+}
+
+.container .dropdown p {
+	width: 30px;
+	display: inline-block;
+}
+
+.container .navbar-nav a> p:hover {
+	border-bottom: 2px solid black;
+}
+
+.navbar-default .navbar-nav>.open>a:focus {
+	background-color: rgb(245, 245, 245);
+}
+
+
+/*下拉菜单*/
+
+.container .dropdown-menu {
+	width: 1260px;
+	height: 400px;
+	left: -450px;
+	background: rgb(245, 245, 245);
+	border: none;
+	box-shadow: none;
+	padding: 0 20px;
+}
+
+.container .dropdown-menu a {
+	padding-left: 0;
+	color: black;
+}
+
+.container .dropdown-menu li:nth-child(1) {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.container .dropdown-menu li {
+	width: 200px;
+	height: 48px;
+}
+
+.container .dropdown-menu .c-glyph {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background: #e6e6e6;
+	left: 0;
+	border-bottom: 2px solid black;
+}
+
+.container .dropdown-menu .c-glyph a {
+	font-size: 1.6rem;
+}
+
+
+/*导航栏右*/
+
+.container .navbar-form {
+	margin: 0;
+}
+
+
+/*搜索框*/
+
+.container .form-group {
+	position: relative;
+}
+
+.container .navbar-form input {
+	border: 1px solid rgb(153, 153, 153);
+	border-radius: 0px;
+	width: 267px;
+	height: 36px;
+	margin-bottom: 4px;
+	padding-right: 40px;
+	box-sizing: border-box;
+	box-shadow: none;
+	font-size: 1.6rem;
+	top: 0;
+}
+
+.container .navbar-form input:hover {
+	border: 1px solid black;
+}
+
+.container .navbar-form input:focus {
+	border: 1px solid #0067B8;
+}
+
+
+/*放大镜按钮*/
+
+.container .navbar-form button {
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 7px;
+	right: 1px;
+	border: none;
+	background: white;
+	outline: none;
+}
+
+
+/*购物车按钮*/
+
+.container .navbar-nav .glyphicon {
+	height: 44px;
+	line-height: 44px;
+	padding: 0 10px 0 15px;
+}
+
+
+/*登录按钮*/
+
+.container .navbar-nav #login {
+	padding: 0 8px;
+	display: flex;
+}
+
+#login a {
+	height: 44px;
+	text-align: center;
+	padding: 12px 5px;
+}
+
+#login a:hover {
+	color: rgb(23, 114, 199);
+}
+
+.container .dropdown-menu ul {
+	list-style: none;
+}
+
+
+/*轮播图*/
+
+
+/*上部信息栏*/
+
+.swiper-message-top {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	background: black;
+	color: white;
+}
+
+.swiper-message-top span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/*轮播图主体*/
+
+.swiper-container {
+	width: 100%;
+	position: relative;
+}
+
+
+/*展示信息*/
+
+.swiper-message-main {
+	position: absolute;
+	left: 95px;
+	top: 206px;
+}
+
+.swiper-message-main h1 {
+	font-size: 5rem;
+	`
+}
+
+.swiper-message-main .c-paragraph {
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+
+.swiper-message-main .c-group {
+	width: 128px;
+	height: 40px;
+	padding: 10px 0;
+	background: black;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+
+.message2 {
+	color: white;
+}
+
+.message2 .c-group {
+	background: white;
+	color: black;
+	font-weight: bold;
+}
+
+
+/*分页器*/
+
+.swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+	border: 1px solid gray;
+}
+
+.swiper-pagination-bullet-active {
+	background: white;
+}
+
+.pause {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 99;
+	left: 52%;
+	bottom: 2px;
+	text-align: center;
+	color: gray;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.pause:hover {
+	background: white;
+}
+
+
+/*轮播导航按钮*/
+
+.sbuttoon {
+	display: none;
+}
+
+.swiper-container:hover>.sbuttoon {
+	display: block;
+}
+
+.sbuttoon div {
+	width: 24px;
+	height: 48px;
+}
+
+
+/*修改按钮样式*/
+
+
+/*按钮左*/
+
+.swiper-button-prev {
+	width: 14px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	background: #ece8e8;
+	padding: 15px 0 0 5px;
+}
+
+
+/*按钮右*/
+
+.swiper-button-next {
+	width: 14px;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	background: #ece8e8;
+	padding: 15px 0 0 5px;
+}
+
+
+/*主体*/
+
+.section {
+	padding-top: 48px;
+}
+
+.section .row {
+	padding: 0 20px 60px 20px;
+}
+
+.section .content-goods-message {
+	text-align: left;
+}
+
+.section .content-goods h3 {
+	font-weight: bold;
+}
+
+.section .content-goods .c-paragraph {
+	font-size: 1.6rem;
+	padding-bottom: 10px;
+}
+
+.section .content-goods .c-group {
+	position: relative;
+	cursor: pointer;
+}
+
+.section .content-goods .c-group div::before {
+	color: rgb(57, 121, 198);
+	position: absolute;
+	top: -13px;
+}
+
+.section .picture {
+	position: relative;
+}
+
+.section .picture .swiper-message-main {
+	z-index: 1;
+}
+
+.section .row .title {
+	width: 100%;
+	display: inline-block;
+	font-size: 2.5rem;
+	padding-bottom: 25px;
+}
+
+.indexGoods1 img {
+	width: 90%;
+}
+
+.indexGoods2 img {
+	width: 90%;
+}
+
+
+/*中间展示图片*/
+
+.ZSMessage {
+	position: absolute;
+	top: 206px;
+	left: 6%;
+}
+
+
+/*底部轮播图*/
+
+.section .swiper-container .swiper-message-main {
+	color: black;
+}
+
+.section .swiper-container .swiper-message-main .c-group {
+	width: 216px;
+}
+
+
+/*关注*/
+
+.pad-social {
+	padding: 50px 15px 20px 15px;
+	font-size: 1.6rem;
+	display: flex;
+	position: relative;
+}
+
+.pad-social ul {
+	display: flex;
+}
+
+.pad-social ul li {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.pad-social li picture img {
+	width: 32px;
+	height: 32px;
+}
+
+.pad-social li span img {
+	position: absolute;
+	top: 90px;
+	left: 105px;
+	display: none;
+}
+
+.pad-social li:nth-child(1):hover>.qrcode img {
+	display: block;
+}
+
+
+/*底部部分*/
+
+footer {
+	background: #f2f2f2;
+	padding-top: 35px;
+}
+
+.list1 ul h6 {
+	font-size: 1.6rem;
+	color: #616161;
+}
+
+.list1 ul li {
+	padding: 8px 0;
+	list-style: none;
+}
+
+.list1 a {
+	color: #616161;
+	font-size: 0.8rem;
+}
+
+.list1 a:hover {
+	color: black;
+}
+
+.list2 {
+	padding: 30px 155px;
+}
+
+.list2 .comment {
+	display: flex;
+	justify-content: space-between;
+}
+
+.list2 a {
+	color: #616161;
+	font-size: 0.8rem;
+}
+
+.list2 a:hover {
+	color: black;
+}
+
+.list2 .lang {
+	padding-left: 0;
+}
+
+.list2 ul {
+	display: flex;
+	list-style: none;
+}
+
+.list2 ul li {
+	padding-left: 30px;
+}
+
+
+/*响应式*/
+
+@media only screen and (max-width: 1350px) {
+	/*头部*/
+	.container .navbar-form {
+		position: relative;
+	}
+	.container .navbar-form input {
+		display: none;
+	}
+	.container .navbar-form button {
+		position: absolute;
+		top: -18px;
+		left: -30px;
+	}
+	/*轮播图*/
+	.swiper-message-main h1 {
+		font-size: 4rem;
+	}
+	.swiper-message-main .c-group {
+		width: 100px;
+		font-size: 1rem;
+		padding: 10px;
+		line-height: 20px;
+	}
+	.ZSMessage {
+		position: absolute;
+		top: 100px;
+		left: 6%;
+	}
+	/*底部*/
+	footer .list2 .comment ul {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	/*头部*/
+	.navbar-default .navbar-header {
+		position: absolute;
+		left: 38%;
+	}
+	.DHM {
+		display: none;
+	}
+	.swiper-message-main {
+		top: 133px;
+		left: 70px;
+	}
+	.swiper-message-main h1 {
+		font-size: 2.5rem;
+	}
+	.swiper-message-main .c-group {
+		width: 100px;
+		font-size: 0.8rem;
+		padding: 10px;
+		line-height: 20px;
+	}
+	.ZSMessage {
+		position: absolute;
+		top: 62px;
+		left: 6%;
+	}
+	.resNav {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 765px) {
+	.container .navbar-form {
+		position: absolute;
+   		right: 0;
+   		top: 0;
+    		width: 150px;
+    		border: none;
+	}
+	.container .navbar-form button {
+		display: none;
+	}
+	.container .navbar-right li:nth-child(1) {
+		display: none;
+	}
+	.container .navbar-right #login {
+		position: absolute;
+		display: inline-block;
+		top: 5px;
+    		left: 94px;
+	}
+}

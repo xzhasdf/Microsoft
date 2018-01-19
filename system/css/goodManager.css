@@ -1,0 +1,36 @@
+button {
+	outline: none !important;
+}
+
+.container-fluid .navbar-collapse ul li a {
+	display: inline-block;
+}
+.manager {
+	padding-top: 5px;
+}
+.manager>div {
+	display: none;
+}
+
+.manager .on {
+	display: block;
+}
+
+.container table tr th {
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.container table tr td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.container table tr td button {
+	margin: 2px;
+}
+.manager-btn {
+	padding-left: 8px;
+	padding-right: 8px;
+}

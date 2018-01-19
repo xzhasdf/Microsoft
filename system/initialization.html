@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<section>
+			<div class="heading-show-all" style="padding-top: 120px;">
+				<h1>二合一设备<small style="font-size: 1.5rem;">(12设备)</small></h1>
+				<div class="btn-show">
+					<button class="screen">显示所有筛选器<span>+</span></button>
+				</div>
+			</div>
+			<hr>
+			<div class="intro-message">
+				<div class="intro-left col-xs-6">
+					<p>Windows 二合一设备提供强大的功能与灵活性。你可以根据自己的风格和工作内容选择任何操作方式—触摸、键入、单击或使用触控笔。</p>
+				</div>
+				<div class="rank-right col-xs-6">
+					<div class="dropdown" style="position: relative;">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							特别推荐<span class="caret"></span>
+							</button>
+						<ul class="dropdown-menu price-type" aria-labelledby="dropdownMenu1">
+							<li class="active">
+								<a href="#">特别推荐</a>
+							</li>
+							<li>
+								<a href="#">价格由高到低</a>
+							</li>
+							<li>
+								<a href="#">价格由低到高</a>
+							</li>
+						</ul>
+					</div>
+					<p>排序依据 : </p>
+				</div>
+			</div>
+			<!--商品框-->
+			<div class="goods">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 goodsDiv">
+					<img src="../source/Windows_Surface_J_1920_IMG.jpg">
+					<div>
+						<h4>Microsoft Surface Pro</h4>
+						<p style="font-weight:700;">
+							<strong>
+									¥ 5,888
+									<span></span>
+								</strong>
+						</p>
+						<ul class="c-list" style="height: 288px">
+							<li>OS: Windows 10 Pro</li>
+							<li>显示: 12.3"</li>
+							<li>电池使用时间: 高达 13.5 小时<sup>10</sup></li>
+							<li>内存: 高达 16 GB</li>
+							<li>存储: 高达 1 TB SSD<sup>11</sup></li>
+						</ul>
+						<div class="c-group">
+							<button>立即购买<span class="glyphicon glyphicon-menu-right"></span></button>
+							<button>了解详情<span class="glyphicon glyphicon-menu-right"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="../source/RWfUaz.jpeg"/>
+		</section>
+	</body>
+	<script>
+		var goodList1 = [{
+			typeName: '二合一设备',
+			typeNum: '12设备',
+			typeList: 'Windows 二合一设备提供强大的功能与灵活性。你可以根据自己的风格和工作内容选择任何操作方式—触摸、键入、单击或使用触控笔。',
+			typeClass: 'sec1'
+		}];
+		var goodsString1 = JSON.stringify(goodList1);
+		console.log(goodsString1);
+		localStorage.setItem('productsList1', goodsString1);
+		
+		var goodList = [{
+			imgurl: '../source/Windows_Surface_J_1920_IMG.jpg',
+			name: 'Microsoft Surface Pro',
+			price: '¥ 5,888',
+			list1: 'OS: Windows 10 Pro',
+			list2: '显示: 12.3"',
+			list3: '电池使用时间: 高达 13.5 小时',
+			list4: '内存: 高达 16 GB',
+			list5: '存储: 高达 1 TB SSD',
+			parentClass: 'sec1'
+		}];
+		var goodsString = JSON.stringify(goodList);
+		console.log(goodsString);
+		localStorage.setItem('productsList', goodsString);
+		
+		localStorage.setItem('username', '502339379@qq.com');
+		localStorage.setItem('pswd', '111111*');
+		
+		var indexGoodList = [{
+			indexImgurl:'../source/RWfUaz.jpeg',
+			indexList1:'了解 Surface Book 2',
+			indexList2:'绽放精彩性能的出色笔记本。',
+			indexClass:'indexGoods1'
+		}];
+		var indexGoodString = JSON.stringify(indexGoodList);
+		localStorage.setItem('indexGoodList', indexGoodString);
+
+
+
+	</script>
+
+</html>
